@@ -69,5 +69,6 @@ async def on_message(message: discord.Message):
     await bot.process_commands(message)
 
 webserver.keep_alive
-bot.run("TOKEN")
+bot.run(TOKEN)
+
 
