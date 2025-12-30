@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 import webserver
-
+import os
 TOKEN = os.environ['discordkey']
 intents = discord.Intents.default()
 intents.message_content = True  # REQUIRED
@@ -70,3 +70,4 @@ async def on_message(message: discord.Message):
 
 webserver.keep_alive
 bot.run("TOKEN")
+
